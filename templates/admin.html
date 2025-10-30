@@ -1,0 +1,11 @@
+<h2>Admin Dashboard</h2>
+<table border="1">
+  <tr><th>Username</th><th>Lizenz-Key</th><th>Stunden übrig</th></tr>
+  {% for u in users %}
+  <tr>
+    <td>{{ u[0] }}</td>
+    <td>{{ u[1] }}</td>
+    <td>{{ u[2] }}</td>
+  </tr>
+  {% endfor %}
+</table>
